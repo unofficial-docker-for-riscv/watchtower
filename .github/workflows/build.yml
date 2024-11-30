@@ -36,7 +36,7 @@ jobs:
 
       - name: Build and push
         run: |
-          REPOS=" \
-            ${{ secrets.DOCKERHUB_USER }}/watchtower \
+          REPOS="\
+            ${{ secrets.DOCKERHUB_USER }}/riscv-watchtower \
             ghcr.io/${{ github.repository }} \
           " ./build-docker-riscv.sh
